@@ -1,0 +1,31 @@
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 30px;
+}
+
+.company__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+.company__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    color: var(--border-color);
+    transition: color var(--animation), border-color var(--animation);
+    &:hover,
+    &:focus {
+        border-color: var(--color-text-logo);
+        color: var(--color-text-logo);
+    }
+}
+

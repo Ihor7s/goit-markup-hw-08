@@ -1,0 +1,65 @@
+.overlay-img {
+    margin: auto;
+    background-color: var(--second-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/conteiner/Img-min.jpg);
+}
+
+.conteiner-img {
+    width: 1600px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primery-background);
+    max-width: 696px;
+    text-align: center;
+}
+
+.title--margin {
+    margin: 0px auto 30px auto;
+}
+
+.button,
+.subscribe-button {
+    font-family: roboto;
+    cursor: pointer;
+    background: var(--color-text-logo);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primery-background);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    display: block;
+    min-width: 216px;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--animation);
+}
+
+.button:hover {
+    background-color: #188CE8;
+}
+
+.button:focus {
+    background-color: #188CE8;
+}
+
+.button:focus-visible {
+    outline: none;
+}
