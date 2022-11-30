@@ -834,7 +834,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .team__img {
-    width: 450px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -862,7 +862,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   .team__container {
-    width: 450px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1022,6 +1022,13 @@ p {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
@@ -1032,6 +1039,11 @@ p {
 @media screen and (max-width: 767px) {
   .container-footer-adres {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-footer-adres {
+    margin-right: auto;
   }
 }
 
@@ -1083,6 +1095,11 @@ p {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .footer-social__title {
+    text-align: center;
+  }
+}
 
 .social-list__background {
   background: rgba(255, 255, 255, 0.1);
@@ -1094,6 +1111,12 @@ p {
   fill: var(--primery-background);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-social {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-left: 70px;
@@ -1103,11 +1126,18 @@ p {
 /*футер підписатися на розсилку*/
 .footer-subscribe {
   display: block;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
     width: 570px;
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 
@@ -1119,6 +1149,11 @@ p {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-subscribe__text {
+    text-align: center;
+  }
 }
 
 .footer-subscribe__form--imput--email {
@@ -1135,7 +1170,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-subscribe__form--imput--email {
     width: 358px;
-    margin-right: 8px;
+    margin-right: 7px;
   }
 }
 
@@ -1156,6 +1191,15 @@ p {
   margin: 0;
   padding: 10px 28px;
 }
+@media screen and (max-width: 1199px) {
+  .footer-subscribe__button {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+}
 
 .footer-subscribe__icon {
   width: 24px;
@@ -1164,9 +1208,19 @@ p {
 }
 
 .portfolio-list {
-  display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-list__item {
@@ -1214,12 +1268,34 @@ p {
 .portfolio__work {
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 450px;
 }
-.portfolio__work:nth-child(3n) {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .portfolio__work {
+    margin-right: 0px;
+  }
 }
-.portfolio__work:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (max-width: 1199px) {
+  .portfolio__work {
+    width: 354px;
+  }
+  .portfolio__work:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portfolio__work:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__work {
+    width: 370px;
+  }
+  .portfolio__work:nth-child(3n) {
+    margin-right: 0;
+  }
+  .portfolio__work:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio__work--border {
