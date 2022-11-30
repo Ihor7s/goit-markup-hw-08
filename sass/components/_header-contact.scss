@@ -1,47 +1,74 @@
 .header__contact {
     margin-left: auto;
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        
+    }
 }
-
+.header__contact-list {
+    
+}
 .contact__link {
     list-style: none;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--color-text-secohd);
-    padding: 32px 0;
-    display: flex;
-    align-items: center;
     color: var(--color-text-secohd);
     transition: color var(--animation);
-
+    
+    
     &:hover,
-        :focus {
-            color: var(--color-text-logo);
-        }
+    :focus {
+        color: var(--color-text-logo);
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+        padding: 32px 0;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .contact__mailto {
     width: 16px;
     height: 12px;
-    margin-right: 10px;
+    margin-right: 8px;
     fill: var(--color-text-secohd);
     transition: fill var(--animation);
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+    }
 }
 
 .contact__tel--margin {
-    margin-left: 30px;
+    @media screen and (max-width: 1199px) {
+        margin-top: 10px;
+        padding-right: 17px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
 }
 
 .contact__tel {
     width: 10px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 8px;
     fill: var(--color-text-secohd);
     transition: fill var(--animation);
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+    }
 }
 
 .contact__link:hover .contact__mailto,

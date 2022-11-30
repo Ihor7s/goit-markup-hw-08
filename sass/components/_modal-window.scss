@@ -18,13 +18,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
     background: var(--primery-background);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     z-index: 2;
     padding: 40px;
+    width: 450px;
+    height: 609px;
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal__button {
@@ -170,7 +174,7 @@
 .form-checkbox__input {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 0px;
     transform: translateY(-50%);
     display: flex;
     appearance: none;
@@ -191,16 +195,24 @@
     &:focus-visible {
         outline: none;
     }
+    @media screen and (min-width: 1200px) {
+        left: 10px;
+    }
 }
 
 
 .form-checkbox__text {
+    
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--color-text-secohd);
     user-select: none;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form-checkbox__umovy-dohovoru {

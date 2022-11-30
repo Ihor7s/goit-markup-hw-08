@@ -15,14 +15,19 @@
 }
 
 .title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primery-background);
-    max-width: 696px;
     text-align: center;
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .title--margin {

@@ -112,6 +112,13 @@ p {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .heder__container {
+    align-items: center;
+    width: 480px;
+    height: 60px;
+  }
+}
 
 .header-line {
   border-bottom: 1px solid #ECECEC;
@@ -120,11 +127,17 @@ p {
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   list-style: none;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__text-web {
@@ -145,6 +158,11 @@ p {
   padding-top: 0;
   padding-bottom: 0;
 }
+@media screen and (max-width: 1199px) {
+  .navigation {
+    width: 510px;
+  }
+}
 
 .header__nav {
   margin: 0px 0px 0px 93px;
@@ -159,6 +177,11 @@ p {
   color: var(--color-text);
   padding: 32px 0;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -243,19 +266,22 @@ p {
 .header__contact {
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
-
+@media screen and (max-width: 767px) {
+  .header__contact {
+    display: none;
+  }
+}
 .contact__link {
   list-style: none;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--color-text-secohd);
-  padding: 32px 0;
-  display: flex;
-  align-items: center;
   color: var(--color-text-secohd);
   transition: color var(--animation);
 }
@@ -263,25 +289,52 @@ p {
 .contact__link :focus {
   color: var(--color-text-logo);
 }
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+  }
+}
 
 .contact__mailto {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--color-text-secohd);
   transition: fill var(--animation);
 }
+@media screen and (min-width: 1200px) {
+  .contact__mailto {
+    margin-right: 10px;
+  }
+}
 
-.contact__tel--margin {
-  margin-left: 30px;
+@media screen and (max-width: 1199px) {
+  .contact__tel--margin {
+    margin-top: 10px;
+    padding-right: 17px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__tel--margin {
+    margin-left: 30px;
+  }
 }
 
 .contact__tel {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--color-text-secohd);
   transition: fill var(--animation);
+}
+@media screen and (min-width: 1200px) {
+  .contact__tel {
+    margin-right: 10px;
+  }
 }
 
 .contact__link:hover .contact__mailto,
@@ -306,14 +359,21 @@ p {
 }
 
 .title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-background);
-  max-width: 696px;
   text-align: center;
+  max-width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .title--margin {
@@ -375,13 +435,19 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background: var(--primery-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
   padding: 40px;
+  width: 450px;
+  height: 609px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button {
@@ -519,7 +585,7 @@ p {
 .form-checkbox__input {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 0px;
   transform: translateY(-50%);
   display: flex;
   appearance: none;
@@ -540,14 +606,25 @@ p {
 .form-checkbox__input:focus-visible {
   outline: none;
 }
+@media screen and (min-width: 1200px) {
+  .form-checkbox__input {
+    left: 10px;
+  }
+}
 
 .form-checkbox__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--color-text-secohd);
   user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .form-checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-checkbox__umovy-dohovoru {
@@ -604,6 +681,21 @@ p {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 1199px) {
+  .features__list {
+    width: 354px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+  }
+  .features__list:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .features__list:nth-child(2n+1) {
+    margin-right: 25px;
+  }
+}
+
 .features__container {
   background-color: var(--filter-color);
   border-radius: 4px;
@@ -667,7 +759,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .features__subtitle {
-    width: 353px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -676,30 +768,13 @@ p {
   }
 }
 
-/*.container-list::before {
-    content: "";
-    display: block;
-    height: 120px;
-    margin-bottom: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--filter-color);
-}
-.icon-antenna::before {
-    background-image: url(../images/section_2/antenna.svg);
-
-}
-.icon-clock::before {
-    background-image: url(../images/section_2/clock.svg);
-}
-.icon-diagram::before {
-    background-image: url(../images/section_2/diagram.svg);
-}
-.icon-astronaut::before {
-    background-image: url(../images/section_2/astronaut.svg);
-}*/
 .work-section {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
 }
 
 .title-work {
@@ -747,8 +822,30 @@ p {
 
 .team-section {
   background-color: var(--filter-color);
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 352px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+  }
 }
 
 .team__container--name {
@@ -761,7 +858,24 @@ p {
 
 .team__container {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (max-width: 767px) {
+  .team__container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__container {
+    width: 352px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__container {
+    width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .team__container--position {
@@ -810,13 +924,33 @@ p {
 .team__list {
   background-color: var(--primery-background);
   display: inline-block;
-  margin-left: 26px;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__list:first-child {
-  margin-left: 0;
+@media screen and (max-width: 767px) {
+  .team__list {
+    margin-bottom: 30px;
+  }
+  .team__list:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .team__list:nth-child(2n+1) {
+    margin-right: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    margin-right: 25px;
+  }
+  .team__list:last-child {
+    margin-right: 0;
+  }
 }
 
 .title-team {
@@ -895,6 +1029,12 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .container-footer-adres {
+    text-align: center;
+  }
+}
+
 .adres__list--contact {
   text-decoration: none;
   font-weight: 400;
@@ -954,15 +1094,21 @@ p {
   fill: var(--primery-background);
 }
 
-.footer-social {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+  }
 }
 
 /*футер підписатися на розсилку*/
 .footer-subscribe {
-  margin-left: 93px;
-  width: 570px;
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    width: 570px;
+    margin-left: 93px;
+  }
 }
 
 .footer-subscribe__text {
@@ -976,16 +1122,21 @@ p {
 }
 
 .footer-subscribe__form--imput--email {
-  width: 358px;
   height: 50px;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 8px;
   outline: transparent;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__form--imput--email {
+    width: 358px;
+    margin-right: 8px;
+  }
 }
 
 .footer-subscribe__form--imput--email::placeholder {
