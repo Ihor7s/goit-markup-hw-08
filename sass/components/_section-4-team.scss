@@ -2,6 +2,9 @@
     background-color: var(--filter-color);
     padding-bottom: 60px;
         padding-top: 60px;
+    @media screen and (max-width:479px) {
+                width: 480px;
+            }
     @media screen and (min-width: 1200px) {
         padding-bottom: 94px;
         padding-top: 94px;

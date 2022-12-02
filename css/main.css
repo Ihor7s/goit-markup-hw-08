@@ -74,11 +74,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
+  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -157,11 +153,6 @@ p {
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-}
-@media screen and (max-width: 1199px) {
-  .navigation {
-    width: 510px;
-  }
 }
 
 .header__nav {
@@ -355,6 +346,11 @@ p {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/conteiner/mobile-img@1x.jpg);
+}
+@media screen and (max-width: 479px) {
+  .overlay-img {
+    width: 480px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay-img {
@@ -853,6 +849,11 @@ p {
   padding-bottom: 60px;
   padding-top: 60px;
 }
+@media screen and (max-width: 479px) {
+  .team-section {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-section {
     padding-bottom: 94px;
@@ -1043,6 +1044,11 @@ p {
   background-color: var(--second-background);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (max-width: 479px) {
+  .footer {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1495,8 +1501,7 @@ p {
   min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -1519,8 +1524,8 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 32px;
   background-color: #fff;
   z-index: 999;
