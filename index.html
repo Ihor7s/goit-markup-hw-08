@@ -52,10 +52,8 @@
         </ul>
 
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
+            <svg class="menu-toggle">
+                <use href="./images/symbol-defs.svg#icon-menu_mob"></use>
             </svg>
         </button>
     </div>
@@ -538,10 +536,8 @@
 
 <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
-        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-            <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
+        <svg class="menu-toggle">
+            <use href="./images/symbol-defs.svg#icon-close_mob"></use>
         </svg>
     </button>
 
@@ -556,9 +552,9 @@
     </ul>
     <ul class="mobile__social">
         <li class="mobile__social--list"><a class="mobile__social--list-link" href="https://www.instagram.com">Instagram</a></li>
-        <li class="mobile__social--list"><a class="mobile__social--list-link" href="https://www.twitter.com">Twitter</a></li>
-        <li class="mobile__social--list"><a class="mobile__social--list-link" href="https://www.facebook.com">Facebook</a></li>
-        <li class="mobile__social--list"><a class="mobile__social--list-link" href="https://ua.linkedin.com">LinkedIn</a></li>
+        <li class="mobile__social--list"><a class="mobile__social--list-link mobile__social--list--before" href="https://www.twitter.com">Twitter</a></li>
+        <li class="mobile__social--list"><a class="mobile__social--list-link mobile__social--list--before" href="https://www.facebook.com">Facebook</a></li>
+        <li class="mobile__social--list"><a class="mobile__social--list-link mobile__social--list--before" href="https://ua.linkedin.com">LinkedIn</a></li>
     </ul>
 </div>
 

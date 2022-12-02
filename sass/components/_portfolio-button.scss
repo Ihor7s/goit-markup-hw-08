@@ -3,6 +3,7 @@
     @media screen and (max-width: 767px) {
         display: inline-flex;
         flex-wrap: wrap;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) {
@@ -53,4 +54,9 @@
     }
 }
 
+.portfolio-list__button--margin {
+    @media screen and (max-width: 767px) {
+        margin-top: 10px;
+    }
+} 
 
