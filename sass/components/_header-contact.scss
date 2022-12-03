@@ -1,14 +1,11 @@
 .header__contact {
     margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
+
     @media screen and (max-width: 767px) {
         display: none;
     }
-    @media screen and (min-width: 768px) {
-        
+    @media screen and (min-width: 1200px) {
+        display: flex;
     }
 }
 .header__contact-list {
@@ -53,7 +50,6 @@
 .contact__tel--margin {
     @media screen and (max-width: 1199px) {
         margin-top: 10px;
-        padding-right: 17px;
     }
     @media screen and (min-width: 1200px) {
         margin-left: 30px;

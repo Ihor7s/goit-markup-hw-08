@@ -28,7 +28,7 @@ display: block;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--border-color);
-    width: 170px;
+    width: 210px;
     height: 92px;
     border-radius: 4px;
     color: var(--border-color);
@@ -38,5 +38,14 @@ display: block;
         border-color: var(--color-text-logo);
         color: var(--color-text-logo);
     }
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+    }
+    
 }
 

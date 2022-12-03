@@ -256,15 +256,18 @@ p {
 
 .header__contact {
   margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
 }
 @media screen and (max-width: 767px) {
   .header__contact {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    display: flex;
+  }
+}
+
 .contact__link {
   list-style: none;
   text-decoration: none;
@@ -306,7 +309,6 @@ p {
 @media screen and (max-width: 1199px) {
   .contact__tel--margin {
     margin-top: 10px;
-    padding-right: 17px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -338,10 +340,9 @@ p {
 .overlay-img {
   margin: auto;
   background-color: var(--second-background);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 180px;
+  padding-bottom: 180px;
   max-width: 1600px;
-  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -375,6 +376,12 @@ p {
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .overlay-img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/conteiner/desk-img@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay-img {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -705,7 +712,7 @@ p {
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__list {
     width: 354px;
     display: inline-flex;
@@ -729,7 +736,6 @@ p {
 }
 @media screen and (max-width: 767px) {
   .features__container {
-    width: 450px;
     padding: 25px 192px;
   }
 }
@@ -960,12 +966,15 @@ p {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list:nth-child(-n+2) {
     margin-bottom: 30px;
   }
   .team__list:nth-child(2n+1) {
     margin-right: 25px;
+  }
+  .team__list:nth-child(3) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1028,7 +1037,7 @@ p {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--border-color);
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   color: var(--border-color);
@@ -1037,6 +1046,18 @@ p {
 .company__link:hover, .company__link:focus {
   border-color: var(--color-text-logo);
   color: var(--color-text-logo);
+}
+@media screen and (min-width: 768px) {
+  .company__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 /*ФУТЕР*/
@@ -1053,8 +1074,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
   }
 }
@@ -1062,17 +1081,28 @@ p {
   .container-footer {
     display: flex;
     align-items: baseline;
+    text-align: left;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .container-footer-adres {
-    text-align: center;
+@media screen and (min-width: 768px) {
+  .conrainer-tablet {
+    display: flex;
+    justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
+
+.container-footer-adres {
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-footer-adres {
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-footer-adres {
+    text-align: left;
   }
 }
 
@@ -1142,8 +1172,8 @@ p {
 
 @media screen and (max-width: 767px) {
   .footer-social {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1155,7 +1185,6 @@ p {
 /*футер підписатися на розсилку*/
 .footer-subscribe {
   display: block;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer-subscribe {
@@ -1164,7 +1193,6 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
-    width: 570px;
     margin-left: 93px;
     margin-top: 0;
   }
