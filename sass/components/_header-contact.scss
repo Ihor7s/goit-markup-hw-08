@@ -21,7 +21,8 @@
     color: var(--color-text-secohd);
     color: var(--color-text-secohd);
     transition: color var(--animation);
-    
+    display: flex;
+    align-items: center;
     
     &:hover,
     :focus {

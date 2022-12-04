@@ -278,6 +278,8 @@ p {
   color: var(--color-text-secohd);
   color: var(--color-text-secohd);
   transition: color var(--animation);
+  display: flex;
+  align-items: center;
 }
 .contact__link:hover,
 .contact__link :focus {
@@ -340,8 +342,8 @@ p {
 .overlay-img {
   margin: auto;
   background-color: var(--second-background);
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1085,10 +1087,16 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .conrainer-tablet {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .conrainer-tablet {
     display: flex;
     justify-content: center;
+    align-items: baseline;
   }
 }
 
@@ -1097,7 +1105,7 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-footer-adres {
-    margin-right: auto;
+    margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1172,7 +1180,6 @@ p {
 
 @media screen and (max-width: 767px) {
   .footer-social {
-    margin-bottom: 60px;
     margin-top: 60px;
   }
 }
